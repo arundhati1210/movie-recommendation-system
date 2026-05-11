@@ -1,0 +1,68 @@
+body {
+  font-family: 'Amatic SC', cursive;
+  background: #fdfdfd;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.title {
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #ff6347;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin: 5px;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.logout {
+  background-color: #555;
+}
+
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.movie-card {
+  background-color: #fffbe6;
+  border: 2px solid #d0c8b3;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 2px 2px 8px #ccc;
+}
+
+.poster {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.rating-form {
+  margin-top: 10px;
+}
+
+.rated {
+  color: #008000;
+  font-size: 18px;
+  font-weight: bold;
+}

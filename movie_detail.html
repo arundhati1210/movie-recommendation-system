@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+    <title>{{ movie.title }}</title>
+</head>
+<body>
+<div class="container">
+    <h2>{{ movie.title }} ({{ movie.release_year }})</h2>
+    <p><strong>Genre:</strong> {{ movie.genre.name }}</p>
+    <p><strong>Description:</strong> {{ movie.description }}</p>
+
+    <h3>Rate this Movie:</h3>
+    <form method="POST">
+        <label for="rating">Your Rating (1-5):</label>
+        <input type="number" name="rating" min="1" max="5" required>
+        <button type="submit">Submit</button>
+    </form>
+
+    <br>
+    <a href="/dashboard">Back to Dashboard</a>
+</div>
+</body>
+</html>
+
